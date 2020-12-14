@@ -45,7 +45,7 @@ for td, bus in enumerate(busses.split(',')):
 print(constraints)
 
 # for bus, td in constraints:
-#     print('0=k+{}mod{},'.format(td, bus))
+#     print('0 = k+{} mod {},'.format(td, bus))
 
 print(next(zip(*constraints)))
 N = np.lcm.reduce(next(zip(*constraints)))
