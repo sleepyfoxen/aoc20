@@ -40,8 +40,8 @@ while turn <= 30000000:
     else:
         speak = abs(turn - last_spoken - 1)
 
-    if turn % 100000 == 0:
-        print('num: {}, remain: {}; {}%'.format(turn, 30000000 - turn, turn / 30000000 * 100))
+    if turn % 500000 == 0:
+        print('num: {}, remain: {}; {:.2f}%'.format(turn, 30000000 - turn, turn / 30000000 * 100))
     last = speak
     turn += 1
 
