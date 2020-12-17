@@ -22,9 +22,9 @@ def f(ones):
                 counter = 0
                 if dx == dy == dz == dw == 0: was_one = True
                 nn = (v[0] + dx, v[1] + dy, v[2] + dz, v[3] + dw)
-                for dx_, dy_, dz_, dw_ in asdf:
-                    if dx_ == dy_ == dz_ == dw_ == 0: continue
-                    adj = (nn[0] + dx_, nn[1] + dy_, nn[2] + dz_, nn[3] + dw_)
+                for dx, dy, dz, dw in asdf:
+                    if dx == dy == dz == dw == 0: continue
+                    adj = (nn[0] + dx, nn[1] + dy, nn[2] + dz, nn[3] + dw)
                     if adj in ones: counter += 1
                     if counter > 3:
                         bk = True
