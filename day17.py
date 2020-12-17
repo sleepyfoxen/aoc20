@@ -18,9 +18,8 @@ def f(ones):
         ones_next = set()
         for v in ones:
             for dx, dy, dz, dw in asdf:
-                was_one = bk = False
-                counter = 0
-                if dx == dy == dz == dw == 0: was_one = True
+                bk, counter = False, 0
+                was_one = dx == dy == dz == dw == 0
                 nn = (v[0] + dx, v[1] + dy, v[2] + dz, v[3] + dw)
                 for dx, dy, dz, dw in asdf:
                     if dx == dy == dz == dw == 0: continue
